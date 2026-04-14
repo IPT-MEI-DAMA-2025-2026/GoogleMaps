@@ -49,5 +49,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.addMarker(MarkerOptions().position(tomar).title("Marker in IPT (O103)"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(tomar))
         //                                          .newLatLngZoom(tomar,15f))
+        mMap.uiSettings.isZoomControlsEnabled = true
+
     }
 }
